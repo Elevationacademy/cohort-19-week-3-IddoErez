@@ -1,56 +1,107 @@
-#chat{
-  display: grid;
+#container{
   height: 100vh;
- 
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 15fr 1fr;
-  grid-template-areas: 
-  "f c"
-  "f i";
+ display: grid;
+ grid-template-areas: 
+ "f c c c"
+ "f c c c"
+ "f c c c"
+ "f c c c"
+ "f i i i";
+
 }
 
 #friends{
+  display: grid;
+  align-items: center;
   grid-area: f;
-  display: grid;
-  background-color: #9932CC;
-}
+  background-color: purple;
 
+}
 #chatbox{
-  grid-area: c;
+ display: grid;
+ gap: 10px;
+ grid-area: c;
+ background-color: #ecf0f1;
+}
+#input{
   display: grid;
+  grid-area: i;
+   background-color: white;
+   border: 0.5px solid grey;
 }
 
-#input{
-  grid-area: i;
+
+.right-message{
   display: grid;
+  background-color: #2ecc71;
+  width: 100px;
+  height: 70px;
+  justify-self: end;
+  text-align: left;
+  border: 1px solid #2ecc71;
+  border-radius: 20%;
+  margin: 10px 20px;
+  padding: 5px 5px;
+ 
+  
+
+}
+
+.left-message{
+   display: grid;
+   background-color: #bdc3c7;
+   width: 100px;
+   height: 70px;
+   justify-self: start;
+   text-align: left;
+   border: 1px solid #bdc3c7;
+   border-radius: 20%;
+   margin: 10px 20px;
+   padding: 5px 5px;
+   
   
 }
-.text-container {
- background-color: #E0E0E0	;
-}
 
-.right {
-    display: grid;
-    justify-content: end;
-    padding-right: 15px;
-    background-color: #3CB371;
-     
-}
-.left {
-  display: grid;
-  justify-content: left;
-  padding-left: 15px;
-  background-color: #D3D3D3;
+.text{
+   width: 100%;
+  height: 20px;
+  min-width: 40px;
  
-  }
-.text {
-  text-align: left;
+ 
 }
 
-.time {
-  text-align: right;
+.time{
+  font-size: x-small;
+  height: 10px;
+  
+
 }
 
+.Name{
+  background-color: #af98c3;
+} 
+
+#SEND{
+  align-items: center;
+  justify-self: center;
+  padding: 5px;
+}
+
+.Name{
+  background-color: #af98c3;
+} 
+
+#input{
+  display: grid;
+  background-color: #8e44ad;
+  grid-template-areas: 
+  "in in in se";
+  text-align: center;
+  color: white;
+}
+
+
+/* ----------------------- */
 
 /* 
 /#results-container{
